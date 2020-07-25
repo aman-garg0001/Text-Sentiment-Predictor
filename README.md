@@ -35,7 +35,7 @@ Total params: 120,637,619
 Trainable params: 637,319
 Non-trainable params: 120,000,300
 
-#Download trained model
+# Download trained model
 You can download the trained model from my personal google drive https://drive.google.com/file/d/11bAyM6irdjZxsYn7Kg6P8w_cbJtizA5M/view?usp=sharing
 You can download the glove vectors from https://drive.google.com/file/d/1-B0joQ0-FGFd17k7FiDP0RCirgzC8bOF/view?usp=sharing
 Save both these files in the same directory where all other files are, otherwise change the train.py and test.py codes so that they can access these files. 
