@@ -12,9 +12,10 @@ This application takes input as a text message and outputs an emoji and sentimen
 # Working
 For training this model takes the text message and convert that to word vectors using https://nlp.stanford.edu/projects/glove/glove.6B.zip word vectorization.
 The summary of various layers of trained model is as follows:
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
+___________________________________________________________________________
+Layer (Type)                 Output Dimension          Trainable Parameters
+___________________________________________________________________________
+
 input_1 (InputLayer)         (None, 40)                0         
 _________________________________________________________________
 embedding_1 (Embedding)      (None, 40, 300)           120000300 
@@ -30,7 +31,8 @@ _________________________________________________________________
 dense_1 (Dense)              (None, 7)                 903       
 _________________________________________________________________
 activation_1 (Activation)    (None, 7)                 0         
-=================================================================
+_________________________________________________________________
+
 Total params: 120,637,619
 Trainable params: 637,319
 Non-trainable params: 120,000,300
