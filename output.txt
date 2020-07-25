@@ -1,0 +1,2 @@
+Predicted Sentiment: guilt
+Predicted Emoji: 😳
