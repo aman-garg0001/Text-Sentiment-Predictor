@@ -13,24 +13,24 @@ This application takes input as a text message and outputs an emoji and sentimen
 For training this model takes the text message and convert that to word vectors using https://nlp.stanford.edu/projects/glove/glove.6B.zip word vectorization.
 The summary of various layers of trained model is as follows:
 ___________________________________________________________________________
-Layer (Type)                 Output Dimension          Trainable Parameters
+Layer (Type)            :     Output Dimension    :      Trainable Parameters
 ___________________________________________________________________________
 
-input_1 (InputLayer)         (None, 40)                0         
+input_1 (InputLayer)    :     (None, 40)           :     0         
 _________________________________________________________________
-embedding_1 (Embedding)      (None, 40, 300)           120000300 
+embedding_1 (Embedding) :     (None, 40, 300)      :     120000300 
 _________________________________________________________________
-bidirectional_1 (Bidirection (None, 40, 256)           439296    
+bidirectional_1 (Bidirection) : (None, 40, 256)    :       439296    
 _________________________________________________________________
-dropout_1 (Dropout)          (None, 40, 256)           0         
+dropout_1 (Dropout)     :     (None, 40, 256)      :     0         
 _________________________________________________________________
-lstm_2 (LSTM)                (None, 128)               197120    
+lstm_2 (LSTM)           :     (None, 128)          :     197120    
 _________________________________________________________________
-dropout_2 (Dropout)          (None, 128)               0         
+dropout_2 (Dropout)     :     (None, 128)          :     0         
 _________________________________________________________________
-dense_1 (Dense)              (None, 7)                 903       
+dense_1 (Dense)         :     (None, 7)            :     903       
 _________________________________________________________________
-activation_1 (Activation)    (None, 7)                 0         
+activation_1 (Activation)  :  (None, 7)            :     0         
 _________________________________________________________________
 
 Total params: 120,637,619
